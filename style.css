@@ -201,7 +201,70 @@
 .product > * {
   flex-shrink: 0 !important;
 }
+/* ===== إصلاح ترتيب بطاقة الموديل ===== */
 
+.product {
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+
+  justify-content: flex-start !important;
+  align-items: stretch !important;
+
+  gap: 0 !important;
+  padding: 20px !important;
+  margin-bottom: 25px !important;
+}
+
+.product-info {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+
+  justify-content: flex-start !important;
+  gap: 10px !important;
+
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 15px 0 !important;
+}
+
+.product-info h3 {
+  margin: 0 0 10px !important;
+}
+
+.price {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 8px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.dozen {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 8px !important;
+
+  margin: 15px 0 !important;
+  padding: 0 !important;
+}
+
+.product .btn {
+  margin: 10px 0 0 !important;
+}
+
+/* منع المسافات الكبيرة الناتجة عن العناصر الداخلية */
+.product > * {
+  flex-shrink: 0 !important;
+}
 .dozen strong {
   font-size: 21px;
 }
@@ -209,4 +272,68 @@
 .product .btn {
   margin-top: 5px;
   display: inline-block;
+}
+/* ===== إصلاح ترتيب بطاقة الموديل ===== */
+
+.product {
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+
+  justify-content: flex-start !important;
+  align-items: stretch !important;
+
+  gap: 0 !important;
+  padding: 20px !important;
+  margin-bottom: 25px !important;
+}
+
+.product-info {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+
+  justify-content: flex-start !important;
+  gap: 10px !important;
+
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 15px 0 !important;
+}
+
+.product-info h3 {
+  margin: 0 0 10px !important;
+}
+
+.price {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 8px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.dozen {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 8px !important;
+
+  margin: 15px 0 !important;
+  padding: 0 !important;
+}
+
+.product .btn {
+  margin: 10px 0 0 !important;
+}
+
+/* منع المسافات الكبيرة الناتجة عن العناصر الداخلية */
+.product > * {
+  flex-shrink: 0 !important;
 }
