@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LAVAN | أزياء وأناقة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#">LAVAN</a>
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#collection">المجموعة</a>
+      <a href="#about">عن LAVAN</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+    <button class="menu" aria-label="القائمة" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-text">
+        <span class="eyebrow">LAVAN COLLECTION</span>
+        <h1>أناقة بسيطة<br><span>بلمسة مختلفة</span></h1>
+        <p>اكتشف مجموعة LAVAN المختارة بعناية، بتصميم عصري يناسب ذوقك.</p>
+        <a class="btn" href="#collection">اكتشف المجموعة</a>
+      </div>
+      <div class="hero-card">
+        <img src="lavan_model_01.webp" alt="LAVAN - الموديل الرئيسي">
+      </div>
+    </section>
+
+    <section class="section" id="collection">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">OUR COLLECTION</span>
+          <h2>المجموعة</h2>
+        </div>
+        <p>اختاري إطلالتك المفضلة من موديلات LAVAN.</p>
+      </div>
+      <div class="grid">
+<article class="product">
+  <img src="lavan_model_01.webp" alt="موديل LAVAN 1" loading="lazy">
+  <div><h3>LAVAN 01</h3><button onclick="openImage('lavan_model_01.webp')">عرض الموديل</button></div>
+</article>
+<article class="product">
+  <img src="lavan_model_02.webp" alt="موديل LAVAN 2" loading="lazy">
+  <div><h3>LAVAN 02</h3><button onclick="openImage('lavan_model_02.webp')">عرض الموديل</button></div>
+</article>
+<article class="product">
+  <img src="lavan_model_03.webp" alt="موديل LAVAN 3" loading="lazy">
+  <div><h3>LAVAN 03</h3><button onclick="openImage('lavan_model_03.webp')">عرض الموديل</button></div>
+</article>
+<article class="product">
+  <img src="lavan_model_04.webp" alt="موديل LAVAN 4" loading="lazy">
+  <div><h3>LAVAN 04</h3><button onclick="openImage('lavan_model_04.webp')">عرض الموديل</button></div>
+</article>
+<article class="product">
+  <img src="lavan_model_05.webp" alt="موديل LAVAN 5" loading="lazy">
+  <div><h3>LAVAN 05</h3><button onclick="openImage('lavan_model_05.webp')">عرض الموديل</button></div>
+</article>
+<article class="product">
+  <img src="lavan_model_06.webp" alt="موديل LAVAN 6" loading="lazy">
+  <div><h3>LAVAN 06</h3><button onclick="openImage('lavan_model_06.webp')">عرض الموديل</button></div>
+</article>
+<article class="product">
+  <img src="lavan_model_07.jpg" alt="موديل LAVAN 7" loading="lazy">
+  <div><h3>LAVAN 07</h3><button onclick="openImage('lavan_model_07.jpg')">عرض الموديل</button></div>
+</article>
+<article class="product">
+  <img src="lavan_model_08.jpg" alt="موديل LAVAN 8" loading="lazy">
+  <div><h3>LAVAN 08</h3><button onclick="openImage('lavan_model_08.jpg')">عرض الموديل</button></div>
+</article>
+<article class="product">
+  <img src="lavan_model_09.jpg" alt="موديل LAVAN 9" loading="lazy">
+  <div><h3>LAVAN 09</h3><button onclick="openImage('lavan_model_09.jpg')">عرض الموديل</button></div>
+</article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <span class="eyebrow">ABOUT LAVAN</span>
+      <h2>تفاصيل تصنع الفرق</h2>
+      <p>LAVAN علامة تهتم بالتفاصيل، وتجمع بين التصميم العصري واللمسة الراقية لتقديم إطلالات مميزة.</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <span class="eyebrow">CONTACT</span>
+      <h2>تواصل معنا</h2>
+      <p>للطلب أو الاستفسار، تواصل معنا مباشرة.</p>
+      <a class="btn" href="mailto:lavan.soft.cotton@gmail.com">راسلنا</a>
+    </section>
+  </main>
+
+  <footer>© 2026 LAVAN — جميع الحقوق محفوظة</footer>
+
+  <div class="modal" id="modal" onclick="closeImage(event)">
+    <button class="modal-close" aria-label="إغلاق" onclick="closeImage(event)">×</button>
+    <img id="modalImg" alt="" onclick="event.stopPropagation()">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
