@@ -1,263 +1,779 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>LAVAN | أزياء وأناقة</title>
-  <link rel="stylesheet" href="style.css">
-</head><style>
-/* إصلاح بطاقات الموديلات */
+    <meta charset="UTF-8">
 
-.product {
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: flex-start !important;
-    align-items: stretch !important;
+    <title>LAVAN | أزياء وأناقة</title>
 
-    gap: 0 !important;
-    padding: 15px !important;
-    margin: 0 0 25px 0 !important;
-}
+    <link rel="stylesheet" href="style.css">
+</head>
 
-.product img {
-    width: 100% !important;
-    height: auto !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    display: block !important;
-}
-
-.product > div {
-    height: auto !important;
-    min-height: 0 !important;
-    margin: 0 !important;
-    padding: 15px 0 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-    gap: 10px !important;
-}
-
-.product h3 {
-    margin: 0 0 10px 0 !important;
-    padding: 0 !important;
-}
-
-.product p,
-.product span,
-.product strong,
-.product button,
-.product a {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-}
-
-.product .price,
-.product .dozen {
-    height: auto !important;
-    min-height: 0 !important;
-    margin: 5px 0 !important;
-    padding: 0 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 8px !important;
-}
-
-.product .btn {
-    margin: 10px 0 0 0 !important;
-}
-</style>
 <body>
-  <header class="header">
-    <a class="logo" href="#">LAVAN</a>
-    
-      <a href="#home">الرئيسية</a>
-      <a href="#collection">المجموعة</a>
-      <a href="#about">عن LAVAN</a>
-      <a href="#contact">تواصل معنا</a>
-    </nav>
-    <button class="menu" aria-label="القائمة" onclick="toggleMenu()">☰</button>
-  </header>
 
-  <main id="home">
-    <section class="hero">
-      <div class="hero-text">
-        <span class="eyebrow">LAVAN COLLECTION</span>
-        <h1>أناقة بسيطة<br><span>بلمسة مختلفة</span></h1>
-        <p>اكتشف مجموعة LAVAN المختارة بعناية، بتصميم عصري يناسب ذوقك.</p>
-        <a class="btn" href="#collection">اكتشف المجموعة</a>
-      </div>
-      <div class="hero-card">
-        <img src="lavan_model_01.webp" alt="LAVAN - الموديل الرئيسي">
-      </div>
-    </section>
+    <!-- ================= HEADER ================= -->
 
-    <section class="section" id="collection">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">OUR COLLECTION</span>
-          <h2>المجموعة</h2>
-        </div>
-        <p>اختاري إطلالتك المفضلة من موديلات LAVAN.</p>
-      </div>
-      <div class="grid">
-<article class="product">
- <article class="product">
+    <header class="header">
 
-  <img src="lavan_model_01.webp" alt="موديل LAVAN 01">
+        <a href="#home" class="logo">
+            LAVAN
+        </a>
 
-  <div class="product-info">
+        <nav class="nav" id="nav">
 
-    <h3>LAVAN 01</h3>
+            <a href="#home">الرئيسية</a>
 
-    <div class="price">
-      <span class="old-price">60 جنيه</span>
-      <span class="discount">خصم 20%</span>
-      <span class="new-price">48 جنيه</span>
+            <a href="#collection">المجموعة</a>
+
+            <a href="#about">عن LAVAN</a>
+
+            <a href="#contact">تواصل معنا</a>
+
+        </nav>
+
+        <button
+            class="menu"
+            id="menuBtn"
+            aria-label="فتح القائمة">
+
+            ☰
+
+        </button>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-text">
+
+                <span class="eyebrow">
+                    LAVAN COLLECTION
+                </span>
+
+                <h1>
+                    أناقة بسيطة
+                    <br>
+                    <span>بلمسة مختلفة</span>
+                </h1>
+
+                <p>
+                    اكتشفي مجموعة LAVAN المميزة
+                    من الموديلات العصرية والأنيقة.
+                </p>
+
+                <a href="#collection" class="btn">
+                    اكتشفي المجموعة
+                </a>
+
+            </div>
+
+
+            <div class="hero-card">
+
+                <img
+                    src="lavan_model_01.webp"
+                    alt="موديل LAVAN 01">
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= COLLECTION ================= -->
+
+        <section class="section" id="collection">
+
+            <div class="section-head">
+
+                <div>
+
+                    <span class="eyebrow">
+                        OUR COLLECTION
+                    </span>
+
+                    <h2>
+                        المجموعة
+                    </h2>
+
+                </div>
+
+                <p>
+                    اختاري إطلالتك المفضلة من موديلات LAVAN.
+                </p>
+
+            </div>
+
+
+            <!-- PRODUCTS -->
+
+            <div class="grid">
+
+
+                <!-- MODEL 01 -->
+
+                <article class="product">
+
+                    <img
+                        src="lavan_model_01.webp"
+                        alt="موديل LAVAN 01">
+
+                    <div class="product-info">
+
+                        <h3>
+                            LAVAN 01
+                        </h3>
+
+                        <div class="price">
+
+                            <span class="old-price">
+                                60 جنيه
+                            </span>
+
+                            <span class="discount">
+                                خصم 20%
+                            </span>
+
+                            <span class="new-price">
+                                48 جنيه
+                            </span>
+
+                        </div>
+
+                        <div class="dozen">
+
+                            <span>
+                                عرض الدستة
+                            </span>
+
+                            <span class="dozen-old">
+                                720 جنيه
+                            </span>
+
+                            <span class="discount">
+                                خصم 30%
+                            </span>
+
+                            <strong>
+                                سعر الدستة: 504 جنيه
+                            </strong>
+
+                        </div>
+
+                        <button
+                            class="btn"
+                            onclick="openImage('lavan_model_01.webp')">
+
+                            عرض الموديل
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MODEL 02 -->
+
+                <article class="product">
+
+                    <img
+                        src="lavan_model_02.webp"
+                        alt="موديل LAVAN 02">
+
+                    <div class="product-info">
+
+                        <h3>
+                            LAVAN 02
+                        </h3>
+
+                        <div class="price">
+
+                            <span class="old-price">
+                                60 جنيه
+                            </span>
+
+                            <span class="discount">
+                                خصم 20%
+                            </span>
+
+                            <span class="new-price">
+                                48 جنيه
+                            </span>
+
+                        </div>
+
+                        <div class="dozen">
+
+                            <span>
+                                عرض الدستة
+                            </span>
+
+                            <span class="dozen-old">
+                                720 جنيه
+                            </span>
+
+                            <span class="discount">
+                                خصم 30%
+                            </span>
+
+                            <strong>
+                                سعر الدستة: 504 جنيه
+                            </strong>
+
+                        </div>
+
+                        <button
+                            class="btn"
+                            onclick="openImage('lavan_model_02.webp')">
+
+                            عرض الموديل
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MODEL 03 -->
+
+                <article class="product">
+
+                    <img
+                        src="lavan_model_03.webp"
+                        alt="موديل LAVAN 03">
+
+                    <div class="product-info">
+
+                        <h3>
+                            LAVAN 03
+                        </h3>
+
+                        <div class="price">
+
+                            <span class="old-price">
+                                60 جنيه
+                            </span>
+
+                            <span class="discount">
+                                خصم 20%
+                            </span>
+
+                            <span class="new-price">
+                                48 جنيه
+                            </span>
+
+                        </div>
+
+                        <div class="dozen">
+
+                            <span>
+                                عرض الدستة
+                            </span>
+
+                            <span class="dozen-old">
+                                720 جنيه
+                            </span>
+
+                            <span class="discount">
+                                خصم 30%
+                            </span>
+
+                            <strong>
+                                سعر الدستة: 504 جنيه
+                            </strong>
+
+                        </div>
+
+                        <button
+                            class="btn"
+                            onclick="openImage('lavan_model_03.webp')">
+
+                            عرض الموديل
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MODEL 04 -->
+
+                <article class="product">
+
+                    <img
+                        src="lavan_model_04.webp"
+                        alt="موديل LAVAN 04">
+
+                    <div class="product-info">
+
+                        <h3>
+                            LAVAN 04
+                        </h3>
+
+                        <div class="price">
+
+                            <span class="old-price">
+                                60 جنيه
+                            </span>
+
+                            <span class="discount">
+                                خصم 20%
+                            </span>
+
+                            <span class="new-price">
+                                48 جنيه
+                            </span>
+
+                        </div>
+
+                        <div class="dozen">
+
+                            <span>
+                                عرض الدستة
+                            </span>
+
+                            <span class="dozen-old">
+                                720 جنيه
+                            </span>
+
+                            <span class="discount">
+                                خصم 30%
+                            </span>
+
+                            <strong>
+                                سعر الدستة: 504 جنيه
+                            </strong>
+
+                        </div>
+
+                        <button
+                            class="btn"
+                            onclick="openImage('lavan_model_04.webp')">
+
+                            عرض الموديل
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MODEL 05 -->
+
+                <article class="product">
+
+                    <img
+                        src="lavan_model_05.webp"
+                        alt="موديل LAVAN 05">
+
+                    <div class="product-info">
+
+                        <h3>
+                            LAVAN 05
+                        </h3>
+
+                        <div class="price">
+
+                            <span class="old-price">
+                                60 جنيه
+                            </span>
+
+                            <span class="discount">
+                                خصم 20%
+                            </span>
+
+                            <span class="new-price">
+                                48 جنيه
+                            </span>
+
+                        </div>
+
+                        <div class="dozen">
+
+                            <span>
+                                عرض الدستة
+                            </span>
+
+                            <span class="dozen-old">
+                                720 جنيه
+                            </span>
+
+                            <span class="discount">
+                                خصم 30%
+                            </span>
+
+                            <strong>
+                                سعر الدستة: 504 جنيه
+                            </strong>
+
+                        </div>
+
+                        <button
+                            class="btn"
+                            onclick="openImage('lavan_model_05.webp')">
+
+                            عرض الموديل
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MODEL 06 -->
+
+                <article class="product">
+
+                    <img
+                        src="lavan_model_06.webp"
+                        alt="موديل LAVAN 06">
+
+                    <div class="product-info">
+
+                        <h3>
+                            LAVAN 06
+                        </h3>
+
+                        <div class="price">
+
+                            <span class="old-price">
+                                60 جنيه
+                            </span>
+
+                            <span class="discount">
+                                خصم 20%
+                            </span>
+
+                            <span class="new-price">
+                                48 جنيه
+                            </span>
+
+                        </div>
+
+                        <div class="dozen">
+
+                            <span>
+                                عرض الدستة
+                            </span>
+
+                            <span class="dozen-old">
+                                720 جنيه
+                            </span>
+
+                            <span class="discount">
+                                خصم 30%
+                            </span>
+
+                            <strong>
+                                سعر الدستة: 504 جنيه
+                            </strong>
+
+                        </div>
+
+                        <button
+                            class="btn"
+                            onclick="openImage('lavan_model_06.webp')">
+
+                            عرض الموديل
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MODEL 07 -->
+
+                <article class="product">
+
+                    <img
+                        src="lavan_model_07.jpg"
+                        alt="موديل LAVAN 07">
+
+                    <div class="product-info">
+
+                        <h3>
+                            LAVAN 07
+                        </h3>
+
+                        <div class="price">
+
+                            <span class="old-price">
+                                60 جنيه
+                            </span>
+
+                            <span class="discount">
+                                خصم 20%
+                            </span>
+
+                            <span class="new-price">
+                                48 جنيه
+                            </span>
+
+                        </div>
+
+                        <div class="dozen">
+
+                            <span>
+                                عرض الدستة
+                            </span>
+
+                            <span class="dozen-old">
+                                720 جنيه
+                            </span>
+
+                            <span class="discount">
+                                خصم 30%
+                            </span>
+
+                            <strong>
+                                سعر الدستة: 504 جنيه
+                            </strong>
+
+                        </div>
+
+                        <button
+                            class="btn"
+                            onclick="openImage('lavan_model_07.jpg')">
+
+                            عرض الموديل
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MODEL 08 -->
+
+                <article class="product">
+
+                    <img
+                        src="lavan_model_08.jpg"
+                        alt="موديل LAVAN 08">
+
+                    <div class="product-info">
+
+                        <h3>
+                            LAVAN 08
+                        </h3>
+
+                        <div class="price">
+
+                            <span class="old-price">
+                                60 جنيه
+                            </span>
+
+                            <span class="discount">
+                                خصم 20%
+                            </span>
+
+                            <span class="new-price">
+                                48 جنيه
+                            </span>
+
+                        </div>
+
+                        <div class="dozen">
+
+                            <span>
+                                عرض الدستة
+                            </span>
+
+                            <span class="dozen-old">
+                                720 جنيه
+                            </span>
+
+                            <span class="discount">
+                                خصم 30%
+                            </span>
+
+                            <strong>
+                                سعر الدستة: 504 جنيه
+                            </strong>
+
+                        </div>
+
+                        <button
+                            class="btn"
+                            onclick="openImage('lavan_model_08.jpg')">
+
+                            عرض الموديل
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MODEL 09 -->
+
+                <article class="product">
+
+                    <img
+                        src="lavan_model_09.jpg"
+                        alt="موديل LAVAN 09">
+
+                    <div class="product-info">
+
+                        <h3>
+                            LAVAN 09
+                        </h3>
+
+                        <div class="price">
+
+                            <span class="old-price">
+                                60 جنيه
+                            </span>
+
+                            <span class="discount">
+                                خصم 20%
+                            </span>
+
+                            <span class="new-price">
+                                48 جنيه
+                            </span>
+
+                        </div>
+
+                        <div class="dozen">
+
+                            <span>
+                                عرض الدستة
+                            </span>
+
+                            <span class="dozen-old">
+                                720 جنيه
+                            </span>
+
+                            <span class="discount">
+                                خصم 30%
+                            </span>
+
+                            <strong>
+                                سعر الدستة: 504 جنيه
+                            </strong>
+
+                        </div>
+
+                        <button
+                            class="btn"
+                            onclick="openImage('lavan_model_09.jpg')">
+
+                            عرض الموديل
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about section" id="about">
+
+            <span class="eyebrow">
+                ABOUT LAVAN
+            </span>
+
+            <h2>
+                تفاصيل تصنع الفرق
+            </h2>
+
+            <p>
+                LAVAN تقدم إطلالات عصرية وأنيقة
+                تجمع بين البساطة والجودة والتصميم المميز.
+            </p>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="contact section" id="contact">
+
+            <span class="eyebrow">
+                CONTACT
+            </span>
+
+            <h2>
+                تواصل معنا
+            </h2>
+
+            <p>
+                للطلب أو الاستفسار، تواصل معنا مباشرة.
+            </p>
+
+            <a
+                class="btn"
+                href="https://wa.me/201000000000"
+                target="_blank">
+
+                تواصل عبر واتساب
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        © 2026 LAVAN - جميع الحقوق محفوظة
+
+    </footer>
+
+
+    <!-- ================= IMAGE MODAL ================= -->
+
+    <div
+        class="modal"
+        id="modal"
+        onclick="closeImage(event)">
+
+        <button
+            class="modal-close"
+            onclick="closeModal()">
+
+            ×
+
+        </button>
+
+        <img
+            id="modalImg"
+            src=""
+            alt="عرض الموديل">
+
     </div>
 
-    <div class="dozen">
-      <span>عرض الدستة</span>
-      <span class="dozen-old">720 جنيه</span>
-      <span class="discount">خصم 30%</span>
-      <strong>سعر الدستة: 504 جنيه</strong>
-    </div>
 
-    <button class="btn" onclick="openImage('lavan_model_01.webp')">
-      عرض الموديل
-    </button>
+    <script src="script.js"></script>
 
-  </div>
-
- </article> <img src="lavan_model_01.webp" alt="موديل LAVAN 1" loading="lazy">
-  <div><h3>LAVAN 01</h3><button onclick="openImage('lavan_model_01.webp')">عرض الموديل</button></div>
-</article>
-<article class="product">
-  <img src="lavan_model_02.webp" alt="موديل LAVAN 2" loading="lazy">
-  <div><h3>LAVAN 02</h3><button onclick="openImage('lavan_model_02.webp')">عرض الموديل</button></div>
-</article>
-<article class="product">
-  <img src="lavan_model_03.webp" alt="موديل LAVAN 3" loading="lazy">
-  <div><h3>LAVAN 03</h3><button onclick="openImage('lavan_model_03.webp')">عرض الموديل</button></div>
-</article>
-<article class="product">
-  <img src="lavan_model_04.webp" alt="موديل LAVAN 4" loading="lazy">
-  <div><h3>LAVAN 04</h3><button onclick="openImage('lavan_model_04.webp')">عرض الموديل</button></div>
-</article>
-<article class="product">
-  <img src="lavan_model_05.webp" alt="موديل LAVAN 5" loading="lazy">
-  <div><h3>LAVAN 05</h3><button onclick="openImage('lavan_model_05.webp')">عرض الموديل</button></div>
-</article>
-<article class="product">
-  <img src="lavan_model_06.webp" alt="موديل LAVAN 6" loading="lazy">
-  <div><h3>LAVAN 06</h3><button onclick="openImage('lavan_model_06.webp')">عرض الموديل</button></div>
-</article>
-<article class="product">
-  <img src="lavan_model_07.jpg" alt="موديل LAVAN 7" loading="lazy">
-  <div><h3>LAVAN 07</h3><button onclick="openImage('lavan_model_07.jpg')">عرض الموديل</button></div>
-</article>
-<article class="product">
-  <img src="lavan_model_08.jpg" alt="موديل LAVAN 8" loading="lazy">
-  <div><h3>LAVAN 08</h3><button onclick="openImage('lavan_model_08.jpg')">عرض الموديل</button></div>
-</article>
-<article class="product">
-  <img src="lavan_model_09.jpg" alt="موديل LAVAN 9" loading="lazy">
-  <div><h3>LAVAN 09</h3><button onclick="openImage('lavan_model_09.jpg')">عرض الموديل</button></div>
-</article>
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <span class="eyebrow">ABOUT LAVAN</span>
-      <h2>تفاصيل تصنع الفرق</h2>
-      <p>LAVAN علامة تهتم بالتفاصيل، وتجمع بين التصميم العصري واللمسة الراقية لتقديم إطلالات مميزة.</p>
-    </section>
-
-    <section class="contact" id="contact">
-      <span class="eyebrow">CONTACT</span>
-      <h2>تواصل معنا</h2>
-      <p>للطلب أو الاستفسار، تواصل معنا مباشرة.</p>
-      <a class="btn" href="https://wa.me/201009812170" target="_blank">راسلنا على واتساب</a>
-    </section>
-  </main>
-<style>
-/* إصلاح بطاقات الموديلات */
-
-.product {
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: flex-start !important;
-    align-items: stretch !important;
-    gap: 0 !important;
-    padding: 15px !important;
-    margin: 0 0 25px 0 !important;
-}
-
-.product img {
-    width: 100% !important;
-    height: auto !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    display: block !important;
-}
-
-.product > div {
-    height: auto !important;
-    min-height: 0 !important;
-    margin: 0 !important;
-    padding: 15px 0 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-    gap: 10px !important;
-}
-
-.product h3 {
-    margin: 0 0 10px 0 !important;
-    padding: 0 !important;
-}
-
-.product p,
-.product span,
-.product strong,
-.product button,
-.product a {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-}
-
-.product .price,
-.product .dozen {
-    height: auto !important;
-    min-height: 0 !important;
-    margin: 5px 0 !important;
-    padding: 0 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 8px !important;
-}
-
-.product .btn {
-    margin: 10px 0 0 0 !important;
-}
-  </style>
-  <footer>© 2026 LAVAN — جميع الحقوق محفوظة</footer>
-
-  <div class="modal" id="modal" onclick="closeImage(event)">
-    <button class="modal-close" aria-label="إغلاق" onclick="closeImage(event)">×</button>
-    <img id="modalImg" alt="" onclick="event.stopPropagation()">
-  </div>
-  <script src="script.js"></script>
 </body>
+
 </html>
